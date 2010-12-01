@@ -8,6 +8,9 @@
 
 これは `OpenPNE <http://www.openpne.jp>`_ 3.6 のプラグイン作成に関する知識をまとめるものです。2010年12月1日から24日まで1章ずつ文章化していく、アドベントカレンダー形式です。
 
+OpenPNEとは
+===========
+
 OpenPNEとはオープンソースのSNSエンジンです。OpenPNE3ではフレンド機能・コミュニティ機能を核として、プラグインによって日記・コミュニティトピック・OpenSocialなど様々な機能を提供することができます。OpenPNE3.6は、symfony1.4 (Doctrine1.2) をベースに開発されています。このドキュメントを読む前に、symfonyのドキュメントである `A Gentle Introduction to symfony`_ を読んでおくと理解がしやすいかもしれません。
 
 .. _`A Gentle Introduction to symfony`: http://www.symfony-project.org/gentle-introduction/1_4/ja/
@@ -22,7 +25,7 @@ OpenPNE3のプラグインは以下のことができます。
 * データベースモデルを定義する。
 * あらゆるアクションの前後で独自の動作を行うようにする。
 
-OpenPNE3本体をカスタマイズしなくても、SNSに独自の機能を実装することができるという事を目指しています。
+OpenPNE3は、それ自身をカスタマイズしなくても、SNSに独自の機能を実装することができるという事を目指して開発されています。
 
 ドキュメント中の表記について
 ============================
@@ -33,7 +36,7 @@ OpenPNE3本体をカスタマイズしなくても、SNSに独自の機能を実
   OpenPNE3を設置したディレクトリを指します。例えば、 */home/foo/OpenPNE3* にOpenPNE3を設置したのならば、 */home/foo/OpenPNE3/lib* のことを *$openpne_dir/lib* と表記します。
 
 *$your_plugin_dir*
-  後にもっと詳しく説明しますが、プラグインは *$openpne_dir/plugins* 下に opXXXXPlugin(XXXXは任意の名前) というディレクトリ設置することになっています。このドキュメントでは、あなたが開発しているプラグインのディレクトリをこの表記で説明します。 *$openpne_dir/plugins/opXXXXPugin/lib* は *$your_plugins_dir/lib* と表記します。
+  後にもっと詳しく説明しますが、プラグインは *$openpne_dir/plugins* 下に opXXXXPlugin(XXXXは任意の名前) というディレクトリ設置することになっています。このドキュメントでは、あなたが開発しているプラグインのディレクトリをこの表記で説明します。例えば、 *$openpne_dir/plugins/opXXXXPugin/lib* は *$your_plugins_dir/lib* と表記します。
 
 *http://sns.example.com*
   OpenPNE3が設置され、実際に動作を確認することができるURLを示します。
