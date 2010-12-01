@@ -12,7 +12,7 @@ Welcome to OpenPNE 3.6 Advent Calendar
    :maxdepth: 1
 
    doc/01_introduction
-   license
+   doc/02_setup1
 
 このドキュメントの管理について
 ==============================
