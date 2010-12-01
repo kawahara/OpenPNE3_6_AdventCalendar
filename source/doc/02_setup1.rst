@@ -92,7 +92,7 @@ OpenPNE3本体の入手
   $ cp config/ProjectConfiguration.class.php.sample config/ProjectConfiguration.class.php
   $ cp config/OpenPNE.yml.sample config/OpenPNE.yml
 
-*$openpne_dir/config/ProjectConfiguration.class.php* はsymfonyの動作させるために必要なもので、 *$openpne_dir/config/OpenPNE.yml* はOpenPNE3の設定 (管理画面から行えないもの) を行うためのものです。
+*$openpne_dir/config/ProjectConfiguration.class.php* はsymfonyを動作させるために必要なもので、 *$openpne_dir/config/OpenPNE.yml* はOpenPNE3の設定 (管理画面から行えないもの) を行うためのものです。
 
 .. warning::
 
@@ -131,7 +131,7 @@ OpenPNE3本体の入手
 
 OpenPNE3.6beta6 ならばプラグインのリストは、 https://trac.openpne.jp/svn/OpenPNE3/bandled-plugins-list/3.6beta6.yml です。
 
-もしも、運用上・開発上で不要なプラグインがある場合は *$openpne_dir/config/plugins.yml* を作成を記述して保存します。
+もしも、運用上・開発上で不要なプラグインがある場合は *$openpne_dir/config/plugins.yml* を以下のような内容で作成します。
 
 ::
 
@@ -150,7 +150,7 @@ OpenPNE3.6beta6 ならばプラグインのリストは、 https://trac.openpne.
 インストールコマンドの実行
 --------------------------
 
-以下のコマンドを実行して、インストールを実行します。
+以下のコマンドを実行して、インストールが開始されます。
 
 ::
 
@@ -234,4 +234,4 @@ httpd.conf ファイルで以下のように設定します。
 また明日
 ========
 
-明日は、プラグインのスケルトンを作成して、ディレクトリの構造や役割を見ていきます。
+明日は、プラグインのスケルトンを作成して、プラグインのディレクトリの構造や役割を見ていきます。
