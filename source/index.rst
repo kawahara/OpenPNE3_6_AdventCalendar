@@ -13,3 +13,15 @@ Welcome to OpenPNE 3.6 Advent Calendar
 
    doc/01_introduction
    license
+
+このドキュメントの管理について
+==============================
+
+以下のレポジトリにて行っています。修正・加筆依頼は pull request を行って下さい。また、さらに協力してくれる方は是非コラボレーターになりましょう。その場合は、 kawahara@bucyou.net までご連絡を。
+
+https://github.com/kawahara/OpenPNE3_6_AdventCalendar
+
+LICENSE
+=======
+
+This work is licensed under a `Creative Commons Attribution 3.0 Unported License. <http://creativecommons.org/licenses/by/3.0/>`_

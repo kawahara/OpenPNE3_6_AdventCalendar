@@ -30,10 +30,10 @@ OpenPNE3本体をカスタマイズしなくても、SNSに独自の機能を実
 このドキュメントでは以下の表記を使います。
 
 *$openpne_dir*
-  OpenPNE3を設置したディレクトリを指します。もしもあなたが、 */home/foo/OpenPNE3* にOpenPNE3を設置したのならば、 */home/foo/OpenPNE3/lib* は *$openpne_dir/lib/* と表記します。
+  OpenPNE3を設置したディレクトリを指します。例えば、 */home/foo/OpenPNE3* にOpenPNE3を設置したのならば、 */home/foo/OpenPNE3/lib* のことを *$openpne_dir/lib* と表記します。
 
 *$your_plugin_dir*
-  後にもっと詳しく説明しますが、プラグインは *$openpne_dir/plugins* 下に opXXXXPlugin(XXXXは任意の名前) というディレクトリ設置することになっています。このドキュメントでは、あなたが作成しているプラグインのディレクトリをこの表記で説明します。 *$openpne_dir/plugins/opXXXXPugin/lib* は *$your_plugins_dir/lib* と表記します。
+  後にもっと詳しく説明しますが、プラグインは *$openpne_dir/plugins* 下に opXXXXPlugin(XXXXは任意の名前) というディレクトリ設置することになっています。このドキュメントでは、あなたが開発しているプラグインのディレクトリをこの表記で説明します。 *$openpne_dir/plugins/opXXXXPugin/lib* は *$your_plugins_dir/lib* と表記します。
 
 *http://sns.example.com*
   OpenPNE3が設置され、実際に動作を確認することができるURLを示します。
