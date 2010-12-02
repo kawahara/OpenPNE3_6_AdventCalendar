@@ -13,6 +13,7 @@ Welcome to OpenPNE 3.6 Advent Calendar
 
    doc/01_introduction
    doc/02_setup1
+   doc/03_setup2
 
 このドキュメントの管理について
 ==============================
