@@ -70,7 +70,7 @@ OpenPNE3における **ガジェット** とは、ホーム画面やプロフィ
   大規模なSNSでもデイリーニュースが活用出来るように設計されています。
 
   ぜひお試しください。
-  http://plugins.openpne.jp/
+  http://plugins.openpne.jp/package/opLiteMailTaskPlugin
 
 コンポーネント
 ==============
