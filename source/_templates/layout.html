@@ -1,10 +1,10 @@
 {% extends "!layout.html" %}
 {% block extrahead %}
 {{ super() }}
-<script type="text/javascript" src="{{ pathto("_static/hatenaB.js", 1) }}"></script>
 <script type="text/javascript" src="http://s.hatena.ne.jp/js/HatenaStar.js"></script>
 <script type="text/javascript">
   Hatena.Star.Token = 'db61a9122b3356b5861875996b865a070a23c848';
   Hatena.Star.EntryLoader.headerTagAndClassName = ['h1',null];
 </script>
+<script type="text/javascript" src="{{ pathto("_static/hatenaB.js", 1) }}"></script>
 {% endblock %}
