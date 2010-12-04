@@ -217,6 +217,7 @@ man_pages = [
 
 html_theme = "default"
 html_theme_options = {
+    "stickysidebar": "true",
     "codebgcolor": "#000000",
     "codetextcolor": "#FFFFFF"
 }
