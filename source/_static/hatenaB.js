@@ -1,7 +1,14 @@
 $('document').ready(function(){
   $('div.section h1').each(function() {
     var l = window.location;
-    var url = encodeURI(l.protocol + '//' + l.host + l.pathname);
+    var path = l.pathname;
+    var f = path.substring(path.lastIndexOf ('/',path.length) +1, path.length);
+    if (f && 0 === f.indexOf('index.'))
+    {
+      path = path.substring(0, path.lastIndexOf('/'));
+    }
+
+    var url = encodeURI(l.protocol + '//' + l.host + path);
 
     var img = $('<img />').attr({
       'src'   : 'http://b.hatena.ne.jp/entry/image/' + url,
