@@ -115,9 +115,9 @@ mini_diary_comment
   $ cd $opepne_dir
   $ php symfony doctrine:build --all --and-load
 
-これにより、インストールしたデータベースに *mini_diary* と *mini_diary_comment* が追加されています。
+これにより、インストールしたデータベースに *mini_diary* と *mini_diary_comment* が作られます。
 
 また明日
 ========
 
-明日は、実際にデータのCRUDをやります。
+明日は、データのCRUDを学びます。
