@@ -7,12 +7,19 @@
 
 オリジナルのガジェットを作成します。
 
+.. note:: 関連する symfony のドキュメント
+
+  * `A Gentle Introduction to symfony | 第7章 ビューレイヤーの内側 <http://www.symfony-project.org/gentle-introduction/1_4/ja/07-Inside-the-View-Layer>`_
+
+
+
 ガジェットとは
 ==============
 
 OpenPNE3における **ガジェット** とは、ホーム画面やプロフィール画面などに情報を表示するための部品です。SNS管理者は、管理画面からデザイン設定 -> ガジェット設定 で自身のSNSにあったガジェットの配置と選択をすることができます。
 
 .. image:: images/s5-1.png
+
 **ガジェットの例 (フレンド日記ガジェット)**
 
 ガジェットは以下の11種類があります。

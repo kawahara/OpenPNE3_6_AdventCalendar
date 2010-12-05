@@ -17,6 +17,7 @@ Welcome to OpenPNE 3.6 Advent Calendar
    doc/03_setup2
    doc/04_page
    doc/05_gadget
+   doc/06_database1
 
 このドキュメントの管理について
 ==============================

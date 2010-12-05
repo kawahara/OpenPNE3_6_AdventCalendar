@@ -7,6 +7,10 @@
 
 プラグインで、オリジナルのページを作成します。
 
+.. note:: 関連する symfony のドキュメント
+
+  * `A Gentle Introduction to symfony | 第4章 ページ作成の基本 <http://www.symfony-project.org/gentle-introduction/1_4/ja/04-The-Basics-of-Page-Creation>`_
+
 アクションとテンプレート
 ========================
 
