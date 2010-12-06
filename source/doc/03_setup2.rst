@@ -38,7 +38,7 @@ OpenPNE3のプラグイン名には規則があり、opXXXXPlugin (XXXXは任意
 
   $ php symfony opGenerate:plugin opSamplePlugin
 
-*$openpne_dir/plugins/opSamplePlugin* というディレクトリが作成されます。今後、このドキュメントでは、このディレクトリを *$your_plugin_dir* と表記します。
+``$openpne_dir/plugins/opSamplePlugin`` というディレクトリが作成されます。今後、このドキュメントでは、このディレクトリを `$your_plugin_dir` と表記します。
 
 
 アプリケーションディレクトリの作成
@@ -134,12 +134,12 @@ OpenPNE3のプラグインは、symfonyのプラグインの機能を活用し�
 
 プラグイン名に制約がある
   上にも挙げたとおり、OpenPNE3のプラグインは opXXXXPlugin である必要があります。
-*apps/* がある。
-  symfonyプラグインでアクションやビューを実装する場合は、プラグイン直下に *modules/* を設置して、 *setting.yml* でプラグインのモジュールを有効にする必要があります。
+``apps/*`` がある。
+  symfonyプラグインでアクションやビューを実装する場合は、プラグイン直下に ``modules/*`` を設置して、 ``setting.yml`` でプラグインのモジュールを有効にする必要があります。
 
   OpenPNE3プラグインの場合は、アプリケーションのディレクトリを作成し、その中にモジュールを持つ仕組みになっています。モジュールを有効にする時に特別な設定は不要です。
 ProjectConfiguration::enablePlugins() を行う必要はない。
-  OpenPNE3のプラグインは *$openpne_dir/plugins/* に設置すればデフォルトで有効になります。もしも、特定のプラグインを無効にしたい場合は、管理画面 > プラグイン設定をから設定を行うことができます。
+  OpenPNE3のプラグインは ``$openpne_dir/plugins/*`` に設置すればデフォルトで有効になります。もしも、特定のプラグインを無効にしたい場合は、管理画面 > プラグイン設定をから設定を行うことができます。
 
 また明日
 ========

@@ -7,7 +7,7 @@
 
 今日は、OpenPNE3の入手セットアップとその点で起きがちな問題を取り上げています。
 
-このドキュメントは、今後のプラグイン開発向けに書かれていますので、実際に運用する場合は *$openpne_dir/doc/ja/OpenPNE3_Setup_Guide.txt* を読むようにしてください。
+このドキュメントは、今後のプラグイン開発向けに書かれていますので、実際に運用する場合は ``$openpne_dir/doc/ja/OpenPNE3_Setup_Guide.txt`` を読むようにしてください。
 
 環境の準備
 ==========
@@ -71,7 +71,7 @@ OpenPNE3本体の入手
 
 ソースコードの入手ができました。
 
-今後、新しいバージョンがリリースされたときは以下のように行うことができます。( *$openpne_dir* で操作してください)
+今後、新しいバージョンがリリースされたときは以下のように行うことができます。( `$openpne_dir` で操作してください)
 
 ::
 
@@ -92,15 +92,15 @@ OpenPNE3本体の入手
   $ cp config/ProjectConfiguration.class.php.sample config/ProjectConfiguration.class.php
   $ cp config/OpenPNE.yml.sample config/OpenPNE.yml
 
-*$openpne_dir/config/ProjectConfiguration.class.php* はsymfonyを動作させるために必要なもので、 *$openpne_dir/config/OpenPNE.yml* はOpenPNE3の設定 (管理画面から行えないもの) を行うためのものです。
+``$openpne_dir/config/ProjectConfiguration.class.php`` はsymfonyを動作させるために必要なもので、 ``$openpne_dir/config/OpenPNE.yml`` はOpenPNE3の設定 (管理画面から行えないもの) を行うためのものです。
 
 .. warning::
 
-  *$openpne_dir/config/OpenPNE.yml.sample* は **削除してはいけません** 。なぜならば、デフォルトの設定としてロードされるからです。
+  ``$openpne_dir/config/OpenPNE.yml.sample`` は **削除してはいけません** 。なぜならば、デフォルトの設定としてロードされるからです。
 
 その後、OpenPNE.yml の設定値を実行環境に合わせて変更します。
 
-特に、 **base_url** と **mail_domain** の値は、メール投稿・配信などで重要な値のため正しく設定を行う必要があります。
+特に、 `base_url` と `mail_domain` の値は、メール投稿・配信などで重要な値のため正しく設定を行う必要があります。
 
 
 例 ::
@@ -131,7 +131,7 @@ OpenPNE3本体の入手
 
 OpenPNE3.6beta6 ならばプラグインのリストは、 https://trac.openpne.jp/svn/OpenPNE3/bandled-plugins-list/3.6beta6.yml です。
 
-もしも、運用上・開発上で不要なプラグインがある場合は *$openpne_dir/config/plugins.yml* を以下のような内容で作成します。
+もしも、運用上・開発上で不要なプラグインがある場合は ``$openpne_dir/config/plugins.yml`` を以下のような内容で作成します。
 
 ::
 
@@ -158,7 +158,7 @@ OpenPNE3.6beta6 ならばプラグインのリストは、 https://trac.openpne.
 
 .. warning::
 
-  このコマンドは、 **データベースの削除を行い、作り直します。** もしも、データベースの再作成について都合が悪いときは、 *$openpne_dir/doc/ja/OpenPNE3_Setup_Guide.txt* に記されている、オプションを付けたインストール方法を確認して下さい。
+  このコマンドは、 **データベースの削除を行い、作り直します。** もしも、データベースの再作成について都合が悪いときは、 ``$openpne_dir/doc/ja/OpenPNE3_Setup_Guide.txt`` に記されている、オプションを付けたインストール方法を確認して下さい。
 
 コマンドを実行すると、以下の事項の入力が求められます。
 
@@ -175,7 +175,7 @@ OpenPNE3.6beta6 ならばプラグインのリストは、 https://trac.openpne.
 mod_rewrite の設定
 ------------------
 
-*$openpne_dir/web/.htaccess* の RewriteBase を各自の環境に合わせて設定して下さい。URLの絶対パスを指定します。例えば、 *http://sns.example.com* に設置するのであれば以下のようになります。
+``$openpne_dir/web/.htaccess`` の RewriteBase を各自の環境に合わせて設定して下さい。URLの絶対パスを指定します。例えば、 ``http://sns.example.com`` に設置するのであれば以下のようになります。
 
 ::
 
@@ -186,7 +186,7 @@ Apacheの設定(例)
 
 実際に動かすために、Apacheの設定を変更します。
 
-httpd.conf ファイルで以下のように設定します。
+``httpd.conf`` ファイルで以下のように設定します。
 
 例 ::
 
@@ -215,7 +215,7 @@ httpd.conf ファイルで以下のように設定します。
 ユーザ側
 --------
 
-*http://sns.example.com/index.php* にアクセスして、ログイン画面が表示されるかを確認しましょう。
+``http://sns.example.com/index.php`` にアクセスして、ログイン画面が表示されるかを確認しましょう。
 
 メールアドレスを sns@example.com 、 パスワードを password を入力して、ログイン出来るかを確認してください。
 
@@ -225,7 +225,7 @@ httpd.conf ファイルで以下のように設定します。
 管理画面
 --------
 
-*http://sns.example.com/pc_backend.php* にアクセスして、ログイン画面が表示されるかを確認しましょう。
+``http://sns.example.com/pc_backend.php`` にアクセスして、ログイン画面が表示されるかを確認しましょう。
 
 ユーザ名を admin、パスワードを password と入力して、ログイン出来るかを確認してください。
 

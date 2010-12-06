@@ -5,7 +5,6 @@
 :Author: Shogo Kawahara <Twitter: @ooharabucyou>
 :Date: 2010-12-01
 
-
 これは `OpenPNE <http://www.openpne.jp>`_ 3.6 のプラグイン作成に関する知識をまとめるものです。2010年12月1日から24日まで1章ずつ文章化していく、アドベントカレンダー形式です。
 
 OpenPNEとは
@@ -32,13 +31,13 @@ OpenPNE3は、それ自身をカスタマイズしなくても、SNSに独自の
 
 このドキュメントでは以下の表記を使います。
 
-*$openpne_dir*
-  OpenPNE3を設置したディレクトリを指します。例えば、 */home/foo/OpenPNE3* にOpenPNE3を設置したのならば、 */home/foo/OpenPNE3/lib* のことを *$openpne_dir/lib* と表記します。
+`$openpne_dir`
+  OpenPNE3を設置したディレクトリを指します。例えば、 ``/home/foo/OpenPNE3`` にOpenPNE3を設置したのならば、 ``/home/foo/OpenPNE3/lib`` のことを ``$openpne_dir/lib`` と表記します。
 
-*$your_plugin_dir*
-  後にもっと詳しく説明しますが、プラグインは *$openpne_dir/plugins* 下に opXXXXPlugin(XXXXは任意の名前) というディレクトリ設置することになっています。このドキュメントでは、あなたが開発しているプラグインのディレクトリをこの表記で説明します。例えば、 *$openpne_dir/plugins/opXXXXPugin/lib* は *$your_plugins_dir/lib* と表記します。
+`$your_plugin_dir`
+  後にもっと詳しく説明しますが、プラグインは ``$openpne_dir/plugins`` 下に opXXXXPlugin(XXXXは任意の名前) というディレクトリ設置することになっています。このドキュメントでは、あなたが開発しているプラグインのディレクトリをこの表記で説明します。例えば、 ``$openpne_dir/plugins/opXXXXPugin/lib`` は ``$your_plugins_dir/lib`` と表記します。
 
-*http://sns.example.com*
+`http://sns.example.com`
   OpenPNE3が設置され、実際に動作を確認することができるURLを示します。
 
 明日以降アドベントカレンダーで取り扱うこと

@@ -56,13 +56,13 @@ mini_diary_comment
 | created_at    | datetime   | yes      |                       |
 +---------------+------------+----------+-----------------------+
 
-**member** は SNSメンバー情報を管理するモデルで、 *$openpne_dir/config/doctrine/schema.yml* で定義されています。
+``member`` は SNSメンバー情報を管理するモデルで、 ``$openpne_dir/config/doctrine/schema.yml`` で定義されています。
 
-プラグインの方では **mini_diary** と **mini_diary_comment** を定義します。
+プラグインの方では ``mini_diary`` と ``mini_diary_comment`` を定義します。
 
-*$your_plugins_dir/config/doctrine* を作成して、以下のファイルを作成します。
+``$your_plugins_dir/config/doctrine`` を作成して、以下のファイルを作成します。
 
-*$your_plugins_dir/config/doctrine/schema.yml*
+``$your_plugins_dir/config/doctrine/schema.yml``
 
 ::
 
@@ -115,7 +115,7 @@ mini_diary_comment
   $ cd $opepne_dir
   $ php symfony doctrine:build --all --and-load
 
-これにより、インストールしたデータベースに *mini_diary* と *mini_diary_comment* が作られます。
+これにより、インストールしたデータベースに ``mini_diary`` と ``mini_diary_comment`` が作られます。
 
 また明日
 ========

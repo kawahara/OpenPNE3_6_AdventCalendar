@@ -11,8 +11,6 @@
 
   * `A Gentle Introduction to symfony | 第7章 ビューレイヤーの内側 <http://www.symfony-project.org/gentle-introduction/1_4/ja/07-Inside-the-View-Layer>`_
 
-
-
 ガジェットとは
 ==============
 
@@ -86,7 +84,7 @@ OpenPNE3における **ガジェット** とは、ホーム画面やプロフィ
 
 試しにコンポーネントを作成してみましょう。
 
-*$your_plugins_dir/apps/pc_frontend/modules/sample/actions/components.class.php* を新たに作成します。
+``$your_plugins_dir/apps/pc_frontend/modules/sample/actions/components.class.php`` を新たに作成します。
 
 .. code-block:: php
 
@@ -99,29 +97,29 @@ OpenPNE3における **ガジェット** とは、ホーム画面やプロフィ
     }
   }
 
-アクションの場合と同じく、executeXXXX() (XXXXはコンポーネント名) というメソッドがアクションになります。
+アクションの場合と同じく、 ``executeXXXX()`` (XXXXはコンポーネント名) というメソッドがアクションになります。
 
-テンプレート名は _XXXX.php となります。
+テンプレート名は ``_XXXX.php`` となります。
 
-helloGadgetコンポーネントに対応するテンプレートは *_helloGadget.php* ということです。
+``helloGadget`` コンポーネントに対応するテンプレートは ``_helloGadget.php`` ということです。
 
-*$your_plugins_dir/apps/pc_frontend/modules/sample/templates/_helloGadget.php* を新たに作成します。
+``$your_plugins_dir/apps/pc_frontend/modules/sample/templates/_helloGadget.php`` を新たに作成します。
 
 .. code-block:: php
 
   Hello, world.
 
-コンポーネントを実際に利用する場合は、テンプレート include_component() 関数を利用します。
+コンポーネントを実際に利用する場合は、テンプレート ``include_component()`` 関数を利用します。
 
 前回作成したテンプレートを、すこし変えてみます。
 
-*$your_plugins_dir/apps/pc_frontend/modules/sample/templates/indexSuccess.php*
+``$your_plugins_dir/apps/pc_frontend/modules/sample/templates/indexSuccess.php``
 
 .. code-block:: php
 
   <?php include_component('sample', 'helloGadget'); ?>
 
-この状態で http://sns.example.com/sample/index を見ると以下のようになります。
+この状態で ``http://sns.example.com/sample/index`` を見ると以下のようになります。
 
 .. image:: images/s5-3.png
 
@@ -143,11 +141,11 @@ helloGadgetコンポーネントに対応するテンプレートは *_helloGadg
 ガジェット定義
 --------------
 
-プラグインでガジェットの定義を行う場合は、 *$your_plugins_dir/config/* にガジェット定義ようのYAMLファイルを設置します。
+プラグインでガジェットの定義を行う場合は、 ``$your_plugins_dir/config/*`` にガジェット定義ようのYAMLファイルを設置します。
 
-ファイル名は、上記のガジェットの種類でカッコで示しているものを使います。ホーム画面向けの場合は *gadget.yml* という名前になります。
+ファイル名は、上記のガジェットの種類でカッコで示しているものを使います。ホーム画面向けの場合は ``gadget.yml`` という名前になります。
 
-*$your_plugins_dir/config/gadget.yml*
+``$your_plugins_dir/config/gadget.yml``
 
 ::
 

@@ -16,7 +16,7 @@
 
 前回のスケルトン作成で、既にアクションが作られています。このクラスに sample モジュールのアクションを記していきます。
 
-*$your_plugins_dir/apps/pc_frontend/modules/sample/actions/actions.class.php*
+``$your_plugins_dir/apps/pc_frontend/modules/sample/actions/actions.class.php``
 
 .. code-block:: php
 
@@ -38,13 +38,13 @@
 
 executeIndex() が実際に処理されるアクションです。今は、default/module というアクションにフォワード(転送)する処理が書かれています。default/module は symfony が用意しているサンプルページです。
 
-今の時点で、 http://sns.example.com/sample/index にアクセスすると以下のようなページが表示されます。
+今の時点で、 ``http://sns.example.com/sample/index`` にアクセスすると以下のようなページが表示されます。
 
 .. image:: images/s4-1.png
 
-対応したテンプレートファイル ( *$your_plugins_dir/apps/pc_frontend/modules/sample/templates/indexSuccess.php* ) の内容を表示したいので、フォワードを行わないように変更します。
+対応したテンプレートファイル (``$your_plugins_dir/apps/pc_frontend/modules/sample/templates/indexSuccess.php``) の内容を表示したいので、フォワードを行わないように変更します。
 
-*$your_plugins_dir/apps/pc_frontend/modules/sample/actions/actions.class.php*
+``$your_plugins_dir/apps/pc_frontend/modules/sample/actions/actions.class.php``
 
 .. code-block:: php
 
@@ -58,27 +58,26 @@ executeIndex() が実際に処理されるアクションです。今は、defau
   }
 
 
-今の時点で、 http://sns.example.com/sample/index にアクセスすると以下のようなページが表示されます。特に何も表示されないのは、indexSuccess.php に何も書いていないからです！これでは寂しいので、何かを表示してみます。
+今の時点で、 ``http://sns.example.com/sample/index`` にアクセスすると以下のようなページが表示されます。特に何も表示されないのは、indexSuccess.php に何も書いていないからです！これでは寂しいので、何かを表示してみます。
 
 .. image:: images/s4-2.png
 
-*$your_plugins_dir/apps/pc_frontend/modules/sample/templates/indexSuccess.php*
-
+``$your_plugins_dir/apps/pc_frontend/modules/sample/templates/indexSuccess.php``
 
 .. code-block:: php
 
   Hello, world.
 
-今の時点で、 http://sns.example.com/sample/index にアクセスすると以下のようなページが表示されます。
+今の時点で、 ``http://sns.example.com/sample/index`` にアクセスすると以下のようなページが表示されます。
 
 .. image:: images/s4-3.png
 
-sampleモジュールにアクションを追加するときは、executeXXX() (XXXはアクション名) というメソッドを追加します。
+sampleモジュールにアクションを追加するときは、 ``executeXXX()`` (XXXはアクション名) というメソッドを追加します。
 
-hello というアクションを追加しましょう。
+``hello`` というアクションを追加しましょう。
 
 
-*$your_plugins_dir/apps/pc_frontend/modules/sample/actions/actions.class.php*
+``$your_plugins_dir/apps/pc_frontend/modules/sample/actions/actions.class.php``
 
 .. code-block:: php
 
@@ -95,15 +94,15 @@ hello というアクションを追加しましょう。
     }
   }
 
-hello に対応するテンプレートが必要になるので、以下のファイルを作成します。
+``hello`` に対応するテンプレートが必要になるので、以下のファイルを作成します。
 
-*$your_plugins_dir/apps/pc_frontend/modules/sample/templates/helloSuccess.php*
+``$your_plugins_dir/apps/pc_frontend/modules/sample/templates/helloSuccess.php``
 
 .. code-block:: php
 
   Hello, world!!
 
-今の時点で、 http://sns.example.com/sample/hello にアクセスすると以下のようなページが表示されます。
+今の時点で、 ``http://sns.example.com/sample/hello`` にアクセスすると以下のようなページが表示されます。
 
 .. image:: images/s4-4.png
 
@@ -116,9 +115,9 @@ hello に対応するテンプレートが必要になるので、以下のフ�
 
 ログインが必要なモジュールを作成するのは、ごく簡単です。
 
-*$your_plugins_dir/apps/pc_frontend/modules/config* ディレクトリを作成し、以下の設定ファイルを作成します。
+``$your_plugins_dir/apps/pc_frontend/modules/config`` ディレクトリを作成し、以下の設定ファイルを作成します。
 
-*$your_plugins_dir/apps/pc_frontend/modules/sample/config/security.yml*
+``$your_plugins_dir/apps/pc_frontend/modules/sample/config/security.yml``
 
 ::
 
@@ -147,9 +146,9 @@ hello に対応するテンプレートが必要になるので、以下のフ�
 アクションからテンプレートに値を渡す
 ====================================
 
-ログインしないとページが見られない状態になったので、ログイン中のメンバーのニックネームをアクションからテンプレートに渡してみましょう。executeHello() に1行追加して、helloSuccess.php も少し変更します。
+ログインしないとページが見られない状態になったので、ログイン中のメンバーのニックネームをアクションからテンプレートに渡してみましょう。 ``executeHello()`` に1行追加して、 ``helloSuccess.php`` も少し変更します。
 
-*$your_plugins_dir/apps/pc_frontend/modules/sample/actions/actions.class.php*
+``$your_plugins_dir/apps/pc_frontend/modules/sample/actions/actions.class.php``
 
 .. code-block:: php-inline
 
@@ -158,15 +157,15 @@ hello に対応するテンプレートが必要になるので、以下のフ�
       $this->nickname = $this->getUser()->getMember()->getName();
     }
 
-*$your_plugins_dir/apps/pc_frontend/modules/sample/templates/helloSuccess.php*
+``$your_plugins_dir/apps/pc_frontend/modules/sample/templates/helloSuccess.php``
 
 .. code-block:: php
 
   Hello, <?php echo $nickname ?>.
 
-アクション内で、 $this->getUser()->getMember()->getName() とすることで、ログイン中のメンバーのニックネームを取り出すことができます。
+アクション内で、 ``$this->getUser()->getMember()->getName()`` とすることで、ログイン中のメンバーのニックネームを取り出すことができます。
 
-また、$this->xxxx をすると、 テンプレート内で $xxxx として利用ができます。テンプレートに渡ったパラメータはエスケープが完了しています。
+また、アクション内で ``$this->xxxx`` に値を代入すると、テンプレート内で ``$xxxx`` として利用ができます。テンプレートに渡ったパラメータはエスケープが完了しています。
 
 .. warning::
 
@@ -174,7 +173,7 @@ hello に対応するテンプレートが必要になるので、以下のフ�
   テンプレート内で取り出したデータは自動的にエスケープされません。
   よって、XSS を引き起こしてしまうかもしれません。
 
-ログインした上で、 http://sns.example.co/sample/hello にアクセスしてみましょう。以下のようになります。
+ログインした上で、 ``http://sns.example.co/sample/hello`` にアクセスしてみましょう。以下のようになります。
 
 .. image:: images/s4-5.png
 
@@ -189,8 +188,7 @@ TIPS: 上手くうごきません...
 
 もしも、出力されているエラーを見たい場合は、dev (開発用) 環境にアクセスしましょう。
 
-http://sns.example.com/アプリケーション名_dev.php からアクセスする事ができます。
-
+``http://sns.example.com/アプリケーション名_dev.php`` からアクセスする事ができます。
 
 例 ::
 
