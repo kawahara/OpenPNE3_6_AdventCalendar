@@ -20,6 +20,7 @@ Welcome to OpenPNE 3.6 Advent Calendar
    doc/06_database1
    doc/07_database2
    doc/08_routing
+   doc/09_forms
 
 このドキュメントの管理について
 ==============================
