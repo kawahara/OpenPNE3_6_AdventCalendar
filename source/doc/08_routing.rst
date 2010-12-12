@@ -101,6 +101,8 @@ URLを意味を持ったものにするという利点だけでなく、以下�
 また、 ``$your_plugin_dir/apps/pc_frontend/modules/miniDiary/templates/`` には空の
 ``listSuccess.php``, ``newSuccess.php``, ``editSuccess.php``, ``showSuccess.php``, ``deleteConfirmSuccess.php`` を作成しておきましょう。
 
+.. note::  ``$your_plugin_dir/apps/pc_frontend/modules/miniDiary/templates/indexSuccess.php`` は使わないので削除してかまいません。
+
 ログインが必要なモジュールに変えます。
 
 ``$your_plugin_dir/apps/pc_frontend/modules/miniDiary/config/security.yml``

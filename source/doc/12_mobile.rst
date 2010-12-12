@@ -315,7 +315,7 @@ FireMobileSimulatorでの動作確認
 ===============================
 
 OpenPNEでは、モバイルかどうかを判定するためにUserAgentの確認を行っているため、
-動作の確認に Firefoxアドオンの ``FireMobileSimulator <http://firemobilesimulator.org/>`` を使うと便利でしょう。
+動作の確認に Firefoxアドオンの `FireMobileSimulator <http://firemobilesimulator.org/>`_ を使うと便利でしょう。
 
 その前に、携帯端末からのアクセスであるかをIPアドレスから確認するための機能を無効にします。
 
