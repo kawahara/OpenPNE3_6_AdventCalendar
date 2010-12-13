@@ -95,7 +95,6 @@
   // を渡すことにより、 が閲覧可能かどうかが boolean で返される
   $isViewable = $memberProfile->isViewable($viewer->getId()))
 
-
 特定のメンバーのフレンド
 ========================
 
@@ -122,6 +121,32 @@
 
   // member_id = 1 の フレンド member_id の配列を取得
   $friendIds = Doctrine::getTable('MemberRelationShip')->getFriendMemberIds(1);
+
+メンバー関係情報
+================
+
+メンバーどうしの関係についての情報を取得する場合は、 ``MemberRelationship`` (``member_relationship``)
+を利用します。
+
+フレンドかどうか
+----------------
+
+``member_id`` が 1のメンバーと2のメンバーがフレンドかどうかを確認するときは以下のように行なえます。
+
+.. code-block:: php-inline
+
+  $memberRelationship = Doctrine::getTable('MemberRelationship')->retrieveByFromAndTo(1, 2);
+  $isFriend = ($memberRelationship && $memberRelationship->isFriend());
+
+アクセスブロックされているか
+----------------------------
+
+``member_id`` が 1のメンバーが2のメンバーにアクセスブロックされているかを確認するときは以下のように行なえます。
+
+.. code-block:: php-inline
+
+  $memberRelationship = Doctrine::getTable('MemberRelationship')->retrieveByFromAndTo(1, 2);
+  $isBlocked = ($memberRelationship && $memberRelationship->isAccessBlocked());
 
 特定のメンバーのコミュニティ
 ============================

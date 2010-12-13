@@ -25,6 +25,7 @@ Welcome to OpenPNE 3.6 Advent Calendar
    doc/11_sns_information
    doc/12_mobile
    doc/13_migrations
+   doc/14_privacy_control
 
 このドキュメントの管理について
 ==============================
