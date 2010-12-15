@@ -110,10 +110,10 @@ Widgetに、 ``sfWidgetFormChoice`` を、Validatorに、 ``sfValidatorChoice`` 
 
     // メンバーの関係を取得します。
     $memberRelationship = Doctrine::getTable('MemberRelationship')
-      ->retrieveByFromAndTo($this->getUser()->getMemberId(), $miniDiary->getMemberId());
+       ->retrieveByFromAndTo($miniDiary->getMemberId(), $this->getUser()->getMemberId());
 
     // 閲覧者がミニ日記作成者にアクセスブロックされていたら 404
-    $this->forward404If($memberRelationship && $memberRelationship->isAccessBlocked());
+    $this->forward404If($memberRelationship && $memberRelationship->getIsAccessBlock());
 
     if (1 === (int)$miniDiary->getPublicFlag())
     {

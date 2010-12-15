@@ -138,15 +138,16 @@
   $memberRelationship = Doctrine::getTable('MemberRelationship')->retrieveByFromAndTo(1, 2);
   $isFriend = ($memberRelationship && $memberRelationship->isFriend());
 
-アクセスブロックされているか
-----------------------------
+アクセスブロック
+----------------
 
-``member_id`` が 1のメンバーが2のメンバーにアクセスブロックされているかを確認するときは以下のように行なえます。
+``member_id`` が 1のメンバーが2のメンバーをアクセスブロックしているかを確認する場合は以下のように行います。
 
 .. code-block:: php-inline
 
   $memberRelationship = Doctrine::getTable('MemberRelationship')->retrieveByFromAndTo(1, 2);
-  $isBlocked = ($memberRelationship && $memberRelationship->isAccessBlocked());
+  $isBlock = ($memberRelationship && $memberRelationship->getIsAccessBlock());
+
 
 特定のメンバーのコミュニティ
 ============================
