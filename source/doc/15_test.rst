@@ -313,7 +313,7 @@ CSRF
 .. code-block:: php-inline
 
   $browser->
-    post('miniDiarye', array())->
+    post('miniDiary', array())->
     checkCSRF();
 
 CSRFトークンがない状態で、日記作成アクションを実行しようとすると、
