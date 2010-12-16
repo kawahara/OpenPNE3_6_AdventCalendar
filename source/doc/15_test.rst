@@ -32,12 +32,12 @@ SNSでは、適切なアクセスコントロールが行われているかな�
     doctrine:
       class: sfDoctrineDatabase
       param:
-        dsn: '#DNS#'
+        dsn: '#DSN#'
         username: root
         encoding: utf8
         attributes: { 164: true }
 
-DNSは、 ``mysql:dbname=op3_test;host=localhost`` のように設定します。
+DSNは、 ``mysql:dbname=op3_test;host=localhost`` のように設定します。
 
 データを用意する
 ----------------
