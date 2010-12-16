@@ -154,7 +154,7 @@ OpenPNE3における **ガジェット** とは、ホーム画面やプロフィ
       ja_JP: "ハローガジェット" # ガジェット名称(日本語)
     description:
       ja_JP: "あいさつをします" # ガジェット説明(日本語)
-    components: [sample, helloGadget] # [module名, component名]
+    component: [sample, helloGadget] # [module名, component名]
 
 .. note:: YAMLの構文上、#以降はコメントになります。実際には入力しなくてもかまいません。
 
