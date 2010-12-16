@@ -87,7 +87,7 @@ OpenPNE3のデフォルトのテンプレートの多くは、パーツという
         template: [sample, helloPartial]
         parts   : [information]
         target  : [bodyBottom]
-        is_component: false # 埋め込むものがテンプレートなら true
+        is_component: false # 埋め込むものがコンポーネントなら true
 
 キャッシュを削除します。
 
