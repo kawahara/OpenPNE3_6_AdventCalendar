@@ -48,6 +48,49 @@
   // false が返されます。
   $age = $member->getAge(true, $viewer->getId());
 
+メールアドレス
+--------------
+
+.. warning:: OpenPNE3自体はログインや通知に利用するメールアドレスについて非公開な設計がされています。
+
+  利用には十分に注意してください。
+
+メンバーがログインや通知に利用しているメールアドレスは以下のように取得できます。
+
+.. code-block:: php-inline
+
+  // member_id=1 の Member インスタンスを取得
+  $member = Doctrine::getTable('Member')->find(1);
+
+  // メールアドレスの配列が返される
+  $mailAddresses = $member->getEmailAddresses();
+
+
+メンバーがPCとモバイルのメールアドレスの両方を持っている場合は、
+``getEmailAddresses()`` によって2つのメールアドレスが返されます。
+
+もし、取得したメールアドレスがモバイル用のものかを確認する場合は
+``opToolkit::isMobileEmailAddress()`` を利用するとよいでしょう。
+
+OpenPNE3にモバイルとして登録されているドメインをもつメールアドレスを渡した場合
+``true`` が返されます。
+
+.. note:: 
+
+  単純にPC向けメールアドレスを取得したい場合は
+
+  code-block:: php-block
+
+    $pcAddress = $member->getConfig('pc_address');
+
+  モバイル向けメールアドレスを取得したい場合は
+
+  code-block:: php-block
+
+    $mobileAddress = $member->getConfig('mobile_address');
+
+  と記述することもできます。
+
 
 その他プロフィール
 ------------------

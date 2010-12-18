@@ -117,6 +117,9 @@ mini_diary_comment
 
 これにより、インストールしたデータベースに ``mini_diary`` と ``mini_diary_comment`` が作られます。
 
+.. チラシの裏
+  TODO 作られたファイルの説明を行うこと
+
 また明日
 ========
 
