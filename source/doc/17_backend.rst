@@ -20,7 +20,7 @@ pc_backend のスケルトンを作成します。
 ::
 
   $ cd $openpne_dir
-  $ symfony opGenerate:app opSamplePlugin pc_backend
+  $ php symfony opGenerate:app opSamplePlugin pc_backend
 
 
 モジュールの作成
@@ -30,7 +30,7 @@ pc_backend のスケルトンを作成します。
 
 ::
 
-  $ symfony opGenerate:module opSamplePlugin pc_backend opSamplePlugin
+  $ php symfony opGenerate:module opSamplePlugin pc_backend opSamplePlugin
 
 これで、プラグイン一覧の ``opSamplePlugin`` の「設定」が有効になります。
 

@@ -25,7 +25,7 @@ OpenPNEは、出力時に携帯端末向けの文字コードに自動変換し�
 ::
 
   $ cd $openpne_dir
-  $ symfony opGenerate:app opSamplePlugin mobile_frontend
+  $ php symfony opGenerate:app opSamplePlugin mobile_frontend
 
 モバイル向けに ``miniDiary`` モジュールのスケルトンも作成しましょう。
 
@@ -33,7 +33,7 @@ OpenPNEは、出力時に携帯端末向けの文字コードに自動変換し�
 
 ::
 
-  $ symfony opGenerate:module opSamplePlugin mobile_frontend miniDiary
+  $ php symfony opGenerate:module opSamplePlugin mobile_frontend miniDiary
 
 ディレクトリを確認しましょう。
 
@@ -225,7 +225,7 @@ PC向けと同様です。 ``$your_plugin_dir/apps/mobile_frontend/miniDiary/con
 ::
 
   $ cd $openpne3_dir
-  $ symfony cc
+  $ php symfony cc
   $ symfony app:route pc_frontend
   .. (省略) ..
   mini_diaries                                           GET          /miniDiaries

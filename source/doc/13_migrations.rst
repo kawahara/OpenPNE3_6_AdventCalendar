@@ -131,7 +131,7 @@ OpenPNE3では、ファイル名を元にマイグレートを行ったかを判
 
   $ cd $openpne_dir
   $ symfony openpne:migrate
-  $ symfony cc
+  $ php symfony cc
 
 これで、 ``mini_diary`` テーブルに ``public_flag`` が追加されます。
 
