@@ -30,6 +30,7 @@ Welcome to OpenPNE 3.6 Advent Calendar
    doc/16_customizing_template
    doc/17_backend
    doc/18_mail1
+   doc/19_mail2
 
 このドキュメントの管理について
 ==============================
