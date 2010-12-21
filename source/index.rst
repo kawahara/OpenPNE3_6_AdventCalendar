@@ -33,6 +33,7 @@ Welcome to OpenPNE 3.6 Advent Calendar
    doc/19_mail2
    doc/20_setting
    doc/21_activity
+   doc/22_event
 
 このドキュメントの管理について
 ==============================
