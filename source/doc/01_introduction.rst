@@ -5,7 +5,8 @@
 :Author: Shogo Kawahara <Twitter: @ooharabucyou>
 :Date: 2010-12-01
 
-これは `OpenPNE <http://www.openpne.jp>`_ 3.6 のプラグイン作成に関する知識をまとめるものです。2010年12月1日から24日まで1章ずつ文章化していく、アドベントカレンダー形式です。
+これは `OpenPNE <http://www.openpne.jp>`_ 3.6 のプラグイン作成に関する知識をまとめるものです。
+2010年12月1日から24日まで1章ずつ文章化していく、アドベントカレンダー形式です。
 
 OpenPNEとは
 ===========

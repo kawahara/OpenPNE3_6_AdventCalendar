@@ -57,7 +57,7 @@ OpenPNE3本体の入手
 ::
 
   $ cd OpenPNE3
-  $ git checkout OpenPNE-3.6beta7
+  $ git checkout OpenPNE-3.6beta8
 
 .. note::
 

@@ -52,8 +52,16 @@ SNS内での活動履歴であるアクティビティの取得・投稿につ�
 * 第2引数には本文を渡します。 (140字以内)
 * 第3引数にはオプションを配列で渡します。
 
-  - public_flag: 公開範囲です。以下の公開範囲を指定することができます。
+  - public_flag : 公開範囲です。以下の公開範囲を指定することができます。
 
     + ActivityDataTable::PUBLIC_FLAG_SNS : SNS内まで公開 (デフォルト)
     + ActivityDataTable::PUBLIC_FLAG_FRIEND : フレンドまで公開
     + ActivityDataTable::PUBLIC_FLAG_PRIVATE : 本人のみ公開
+
+  - uri : 投稿についてのURIです。
+  - source: 投稿元です。
+  - source_uri: 投稿元へのURIです。
+
+
+.. テンプレート
+.. カスケーティングディレート
