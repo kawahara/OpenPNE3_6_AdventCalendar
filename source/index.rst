@@ -34,6 +34,7 @@ Welcome to OpenPNE 3.6 Advent Calendar
    doc/20_setting
    doc/21_activity
    doc/22_event
+   doc/23_task
 
 このドキュメントの管理について
 ==============================
