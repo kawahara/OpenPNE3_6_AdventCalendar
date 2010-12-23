@@ -35,11 +35,14 @@ Welcome to OpenPNE 3.6 Advent Calendar
    doc/21_activity
    doc/22_event
    doc/23_task
+   doc/24_contribution_to_openpne3
 
 このドキュメントの管理について
 ==============================
 
-以下のレポジトリにて行っています。修正・加筆依頼は pull request を行って下さい。また、さらに協力してくれる方は是非コラボレーターになりましょう。その場合は、 kawahara@bucyou.net までご連絡を。
+以下のレポジトリにて行っています。修正・加筆依頼は PullRequest を行うか、 kawahara@bucyou.net までご連絡ください。
+
+また、さらに協力してくれる方は是非コラボレーターになりましょう。
 
 https://github.com/kawahara/OpenPNE3_6_AdventCalendar
 
