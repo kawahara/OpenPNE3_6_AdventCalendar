@@ -164,7 +164,7 @@ symfony のフォームフレームワークは以下のような利点があり
 
 ``op_link_to_member()`` ヘルパー関数で、ニックネームの表示とプロフィール画面へのリンクを簡単に行うことができます。
 
-これで、 http://sns.example.com/diary/new へアクセスしましょう。以下のようになります。
+これで、 http://sns.example.com/miniDiary/new へアクセスしましょう。以下のようになります。
 
 .. image:: images/s9-2.png
 
